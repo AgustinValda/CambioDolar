@@ -32,3 +32,36 @@ function calculoCambio() {
   document.getElementById("recibeOficial").innerHTML = oficial;
   document.getElementById("recibeLiqui").innerHTML = liqui;
 }
+
+function calculoCambioDolar() {
+  let dolar,
+    Blue,
+    oficial,
+    bolsa,
+    liqui,
+    valorCompraBlue,
+    valorCompraOf,
+    valorCompraBolsa,
+    valorCompraliqui;
+
+  dolar = document.getElementById("dinero").value;
+  valorCompraBlue = 205;
+  valorCompraBolsa = 182.94;
+  valorCompraliqui = 182.87;
+  valorCompraOf = 106.47;
+  Blue = parseFloat(dolar) * parseFloat(valorCompraBlue).toFixed(2);
+  oficial = (parseFloat(dolar) * parseFloat(valorCompraOf)).toFixed(2);
+  bolsa = (parseFloat(dolar) * parseFloat(valorCompraBolsa)).toFixed(2);
+  liqui = (parseFloat(dolar) * parseFloat(valorCompraliqui)).toFixed(2);
+
+  document.getElementById("compraBlue").innerHTML = "$" + dolar;
+  document.getElementById("compraOficial").innerHTML = "$" + dolar;
+  document.getElementById("compraBolsa").innerHTML = "$" + dolar;
+  document.getElementById("compraLiqui").innerHTML = "$" + dolar;
+
+  //-----------
+  document.getElementById("recibeBlue").innerHTML = Blue;
+  document.getElementById("recibeBolsa").innerHTML = bolsa;
+  document.getElementById("recibeOficial").innerHTML = oficial;
+  document.getElementById("recibeLiqui").innerHTML = liqui;
+}
