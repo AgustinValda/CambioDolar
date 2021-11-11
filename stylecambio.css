@@ -1,0 +1,55 @@
+body {
+  background-color: rgba(38, 128, 75, 0.178);
+  font-family: monospace;
+  font-size: 2em;
+}
+table {
+  margin-top: 5%;
+  size: 30%;
+
+  border-collapse: collapse;
+}
+h1 {
+  font-family: monospace;
+}
+.dolar {
+  text-align: left;
+}
+.boton {
+  background-color: rgba(114, 27, 255, 0.24);
+  padding-block: 1%;
+  position: relative;
+}
+.boton::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: " ";
+  background-color: rgba(220, 20, 60, 0.363);
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  z-index: -1;
+}
+.titulo {
+  background-color: rgba(3, 119, 51, 0.966);
+  color: azure;
+  text-align: center;
+}
+
+.one {
+  background-color: rgba(15, 226, 103, 0.39);
+}
+
+.two {
+  background-color: rgba(18, 228, 105, 0.11);
+}
+/* .ancho {
+  width: 10%;
+} */
+.recibe {
+  border-left: rgba(12, 100, 31, 0.603) solid;
+}
+#dinero {
+  padding-block: 1%;
+}

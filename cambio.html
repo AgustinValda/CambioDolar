@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pesos Crocantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="stylecambio.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <br /><br />
+
+    <header>
+      <h1 align="center">Cambio Dolares</h1>
+    </header>
+    <br /><br />
+    <section align="center">
+      <label for="dinero">Sus pesos aqui y vea como se van</label>
+      <br />
+      <br />
+      <input type="text" id="dinero" placeholder="Ingrese el monto a cambiar" />
+      <button class="boton" type="button" onclick="calculoCambio()">
+        Calcular
+      </button>
+    </section>
+
+    <table align="center">
+      <tr class="titulo">
+        <th>Moneda</th>
+        <th>Compra</th>
+        <th>Venta</th>
+        <th class="ancho">Su Compra</th>
+        <th>Recibe</th>
+      </tr>
+      <tr class="one">
+        <th scope="row" align="left">
+          <img src="dolar.png" alt="" class="dolar" /> Dolar Blue
+        </th>
+        <td id="compra">$ 202.00</td>
+        <td id="venta">$ 205.00</td>
+        <td class="ancho" id="compraBlue"></td>
+        <td id="recibeBlue" class="recibe"></td>
+      </tr>
+      <tr class="two">
+        <th scope="row">
+          <img src="dolar.png" alt="" class="dolar" />Dolar Oficial
+        </th>
+        <td id="compra">$ 99.74</td>
+        <td id="venta">$ 106.47</td>
+        <td class="ancho" id="compraOficial"></td>
+        <td id="recibeOficial" class="recibe"></td>
+      </tr>
+      <tr class="one">
+        <th scope="row">
+          <img src="dolar.png" alt="" class="dolar" />Dolar Bolsa
+        </th>
+        <td id="compra">$ 182.83</td>
+        <td id="venta">$ 182.94</td>
+        <td class="ancho" id="compraBolsa"></td>
+        <td id="recibeBolsa" class="recibe"></td>
+      </tr>
+      <tr class="two">
+        <th scope="row">
+          <img src="dolar.png" alt="" class="dolar" />Contado Con Liqui
+        </th>
+        <td id="compra">$ 182.75</td>
+        <td id="venta">$ 182.87</td>
+        <td class="ancho" id="compraLiqui"></td>
+        <td id="recibeLiqui" class="recibe"></td>
+      </tr>
+    </table>
+  </body>
+</html>
