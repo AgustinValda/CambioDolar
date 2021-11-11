@@ -12,10 +12,10 @@ function calculoCambio() {
     valorCompraliqui;
 
   pesos = document.getElementById("dinero").value;
-  valorCompraBlue = 202;
-  valorCompraBolsa = 182.83;
-  valorCompraliqui = 182.75;
-  valorCompraOf = 99.74;
+  valorCompraBlue = 205;
+  valorCompraBolsa = 182.94;
+  valorCompraliqui = 182.87;
+  valorCompraOf = 106.47;
   Blue = (parseFloat(pesos) / parseFloat(valorCompraBlue)).toFixed(2);
   oficial = (parseFloat(pesos) / parseFloat(valorCompraOf)).toFixed(2);
   bolsa = (parseFloat(pesos) / parseFloat(valorCompraBolsa)).toFixed(2);
@@ -45,10 +45,10 @@ function calculoCambioDolar() {
     valorCompraliqui;
 
   dolar = document.getElementById("dinero").value;
-  valorCompraBlue = 205;
-  valorCompraBolsa = 182.94;
-  valorCompraliqui = 182.87;
-  valorCompraOf = 106.47;
+  valorCompraBlue = 202;
+  valorCompraBolsa = 182.83;
+  valorCompraliqui = 182.75;
+  valorCompraOf = 99.74;
   Blue = parseFloat(dolar) * parseFloat(valorCompraBlue).toFixed(2);
   oficial = (parseFloat(dolar) * parseFloat(valorCompraOf)).toFixed(2);
   bolsa = (parseFloat(dolar) * parseFloat(valorCompraBolsa)).toFixed(2);
